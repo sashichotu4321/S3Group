@@ -1,0 +1,77 @@
+﻿VS filter: testpath:TestAssembly:S3.QA.Automation/Feature:S3+Web+Application/Scenario:Validating+API%2c+of+S3+home+page | testpath:TestAssembly:S3.QA.Automation/Feature:S3+Web+Application/Scenario:Validating+API+failure+scenario%2c+of+S3+home+page | testpath:TestAssembly:S3.QA.Automation/Feature:S3+Web+Application/Scenario:Validating+UI%2c+of+S3+home+page
+Discovering target: Default
+Discovering tests from assembly: C:\Users\Sashi\Documents\Visual Studio 2015\Projects\S3\S3.QA.Automation\S3.QA.Automation\bin\Debug\S3.QA.Automation.dll
+Appdomain Disposed
+Test Suite Dump
+#0: S3.QA.Automation/Default - 
+#1: Default - 
+#2: S3.QA.Automation - 
+#3: S3 Web Application - 
+#4: Validating UI, of S3 home page - TestAssembly:S3.QA.Automation/Feature:S3+Web+Application/Scenario:Validating+UI%2c+of+S3+home+page
+#5: Validating API, of S3 home page - TestAssembly:S3.QA.Automation/Feature:S3+Web+Application/Scenario:Validating+API%2c+of+S3+home+page
+#6: Validating API failure scenario, of S3 home page - TestAssembly:S3.QA.Automation/Feature:S3+Web+Application/Scenario:Validating+API+failure+scenario%2c+of+S3+home+page
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #4 from normal test queue 
+Thread#0:Scheduler: considering testitem #4 for thread
+Thread#0:Scheduler: using testitem #4 for thread
+Thread#0:Scheduler: Test #4 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for S3.QA.Automation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\Sashi\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.5.2\tools\TechTalk.SpecRun.Framework.Executor.dll
+Thread#0: Test #4/0 is started on thread #0
+Thread#0:B:Given the S3 http://www.s3connectedhealth.com/ is launched in chrome browser
+Thread#0:T:done: S3UISteps.GivenTheS3IsLaunchedInBrowser("http://www.s3conn...", "chrome") (14.6s)
+Thread#0:B:And The page is completely loaded
+Thread#0:T:done: S3UISteps.GivenThePageIsCompletelyLoaded() (0.0s)
+Thread#0:B:When I validate the title of home page
+Thread#0:T:done: S3UISteps.WhenIValidateTheOfHomePage("title") (0.0s)
+Thread#0:B:Then the title should contain S3
+Thread#0:T:done: S3UISteps.ThenTheTitleShouldContain("S3") (0.0s)
+Thread#0:B:Then Exit the Application
+Thread#0:T:done: S3UISteps.ThenExitTheApplication() (0.3s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #5 from normal test queue 
+Thread#0:Scheduler: considering testitem #5 for thread
+Thread#0:Scheduler: using testitem #5 for thread
+Thread#0:Scheduler: Test #5 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #4/0 is finished on thread #0 as Succeeded within 15.2646315 seconds
+Thread#0: Test #5/0 is started on thread #0
+Thread#0:B:Given the http://www.s3connectedhealth.com/ service is up and running
+Thread#0:T:done: S3APISteps.GivenTheServiceIsUpAndRunning("http://www.s3conn...") (0.0s)
+Thread#0:B:When the client gets all projects for a given http://www.s3connectedhealth.com/
+Thread#0:T:done: S3APISteps.WhenTheClientGetsAllProjectsForAGiven("http://www.s3conn...") (0.3s)
+Thread#0:B:Then a OK StatusCode should be returned
+Thread#0:T:done: S3APISteps.ThenAShouldBeReturned("OK", "StatusCode") (0.0s)
+Thread#0:B:Then a 1.1 Version should be returned
+Thread#0:T:done: S3APISteps.ThenAShouldBeReturned("1.1", "Version") (0.0s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #6 from normal test queue 
+Thread#0:Scheduler: considering testitem #6 for thread
+Thread#0:Scheduler: using testitem #6 for thread
+Thread#0:Scheduler: Test #6 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #5/0 is finished on thread #0 as Succeeded within 0.8026931 seconds
+Thread#0: Test #6/0 is started on thread #0
+Thread#0:B:Given the http://www.s3connectedhealth.com/ service is up and running
+Thread#0:T:done: S3APISteps.GivenTheServiceIsUpAndRunning("http://www.s3conn...") (0.0s)
+Thread#0:B:When the client gets all projects for a given http://www.s3connectedhealth.com/
+Thread#0:T:done: S3APISteps.WhenTheClientGetsAllProjectsForAGiven("http://www.s3conn...") (0.3s)
+Thread#0:B:Then a NOT OK ReasonPhrase should be returned
+Thread#0:T:error:   Expected string length 6 but was 2. Strings differ at index 0.
+Thread#0:T:  Expected: "NOT OK"
+Thread#0:T:  But was:  "OK"
+Thread#0:T:  -----------^
+Cancelling because configured number of failures reached
+Thread#0: Test #6/0 is finished on thread #0 as Failed within 0.8702345 seconds
+Appdomain Disposed
+Thread#-1:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#-1:Scheduler: enumerator for thread is at end
+Total: 3
+Succeeded: 2
+Ignored: 0
+Pending: 0
+Skipped: 0
+Failed: 1
